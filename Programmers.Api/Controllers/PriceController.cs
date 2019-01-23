@@ -16,7 +16,23 @@ namespace Programmers.Api.Controllers
             _priceBusiness = priceBusiness;
         }
 
-        
+        /// <summary>
+        /// Calcula o valor total dos ingressos conforme tipo de tema da peça
+        /// </summary>
+        /// <param name="clientPriceViewModel">Objeto tipo ViewModel</param>
+        /// <returns>ViewModel - com valor calulado</returns>
+        /// <remarks>
+        /// Obs :
+        /// idEvent = 1 (Tragédia)
+        /// idEvent = 2 (Comédia)
+        /// ViewModel :
+        /// {
+        ///        "idEvent":"2",
+        ///        "audience": "45",
+        ///        "value": "0",
+        ///        "nameCustomer":"Marcilio"
+        ///    }
+        /// </remarks>
         [HttpPost]
         [Route("api/v1/Price/CalculateTicketTotal/")]
         public HttpResponseMessage CalculateTicketTotal([FromBody]ClientPriceViewModel clientPriceViewModel)
