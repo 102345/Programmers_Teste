@@ -9,6 +9,7 @@ namespace Programmers.Business
     {
         private readonly PriceRepository _priceRepository;
 
+
         public PriceBusiness()
         {
             _priceRepository = new PriceRepository();
