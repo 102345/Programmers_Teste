@@ -11,6 +11,10 @@ c - Popular_Tabela.sql
 
 3 - Abrir o arquivo Web.Config e localizar a chave <connectionString> e mudar o parametro connectionString para sua string de conexao local.
 
+<connectionStrings>
+    <add name="MyDatabase" connectionString="data source=DESKTOP-OE4QIII\MSSQLSERVER12;initial catalog=ProgrammersTeste;persist security info=True;user id=sa;password=bqnec71$;MultipleActiveResultSets=True;" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
   
   
   
